@@ -1,0 +1,18 @@
+2024-11-12 21:58:50,903 - FraudDetectionPipeline - INFO - Starting fraud detection pipeline
+2024-11-12 21:58:50,904 - FraudDetectionPipeline - INFO - Initializing fraud detection system
+2024-11-12 21:58:52,036 - FraudDetectionPipeline - INFO - Processing data
+2024-11-12 21:59:00,747 - FraudDetectionPipeline - INFO - Processed data shape: (1296675, 3)
+2024-11-12 21:59:00,747 - FraudDetectionPipeline - INFO - Handling class imbalance
+2024-11-12 21:59:19,591 - FraudDetectionPipeline - INFO - Resampled data shape: (2487526, 3)
+2024-11-12 21:59:19,591 - FraudDetectionPipeline - INFO - Evaluating model
+2024-11-12 22:00:13,323 - FraudDetectionPipeline - INFO - Generating visualizations
+2024-11-12 22:01:31,988 - FraudDetectionPipeline - ERROR - Pipeline failed: 'precision'
+Traceback (most recent call last):
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_main.py", line 157, in run
+    create_visualization_report(
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_viz.py", line 307, in create_visualization_report
+    viz.plot_metrics_dashboard(
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_viz.py", line 256, in plot_metrics_dashboard
+    f'Precision: {metrics["precision"]:.3f}\n'
+                  ~~~~~~~^^^^^^^^^^^^^
+KeyError: 'precision'

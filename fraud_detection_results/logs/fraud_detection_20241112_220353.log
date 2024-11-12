@@ -1,0 +1,18 @@
+2024-11-12 22:03:53,360 - FraudDetectionPipeline - INFO - Starting fraud detection pipeline
+2024-11-12 22:03:53,360 - FraudDetectionPipeline - INFO - Initializing fraud detection system
+2024-11-12 22:03:54,516 - FraudDetectionPipeline - INFO - Processing data
+2024-11-12 22:04:03,030 - FraudDetectionPipeline - INFO - Processed data shape: (1296675, 3)
+2024-11-12 22:04:03,031 - FraudDetectionPipeline - INFO - Handling class imbalance
+2024-11-12 22:04:22,151 - FraudDetectionPipeline - INFO - Resampled data shape: (2487526, 3)
+2024-11-12 22:04:22,151 - FraudDetectionPipeline - INFO - Evaluating model
+2024-11-12 22:05:17,028 - FraudDetectionPipeline - INFO - Generating visualizations
+2024-11-12 22:05:36,276 - FraudDetectionPipeline - ERROR - Pipeline failed: 'f1_score'
+Traceback (most recent call last):
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_main.py", line 157, in run
+    create_visualization_report(
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_viz.py", line 307, in create_visualization_report
+    viz.plot_metrics_dashboard(
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_viz.py", line 257, in plot_metrics_dashboard
+    f'F1 Score: {metrics["f1_score"]:.3f}'
+                 ~~~~~~~^^^^^^^^^^^^
+KeyError: 'f1_score'

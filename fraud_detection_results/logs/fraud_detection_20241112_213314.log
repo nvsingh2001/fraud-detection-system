@@ -1,0 +1,38 @@
+2024-11-12 21:33:14,715 - FraudDetectionPipeline - INFO - Starting fraud detection pipeline
+2024-11-12 21:33:14,715 - FraudDetectionPipeline - INFO - Initializing fraud detection system
+2024-11-12 21:33:15,931 - FraudDetectionPipeline - INFO - Processing data
+2024-11-12 21:33:23,901 - FraudDetectionPipeline - INFO - Processed data shape: (1296675, 3)
+2024-11-12 21:33:23,901 - FraudDetectionPipeline - INFO - Handling class imbalance
+2024-11-12 21:33:43,257 - FraudDetectionPipeline - INFO - Resampled data shape: (2487526, 3)
+2024-11-12 21:33:43,257 - FraudDetectionPipeline - INFO - Evaluating model
+2024-11-12 21:34:36,570 - FraudDetectionPipeline - INFO - Generating visualizations
+2024-11-12 21:34:36,570 - FraudDetectionPipeline - ERROR - Pipeline failed: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+Traceback (most recent call last):
+  File "/home/ares/anaconda3/lib/python3.11/site-packages/matplotlib/style/core.py", line 137, in use
+    style = _rc_params_in_file(style)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ares/anaconda3/lib/python3.11/site-packages/matplotlib/__init__.py", line 866, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+  File "/home/ares/anaconda3/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/ares/anaconda3/lib/python3.11/site-packages/matplotlib/__init__.py", line 843, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'seaborn'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_main.py", line 157, in run
+    create_visualization_report(
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_viz.py", line 281, in create_visualization_report
+    viz = FraudVisualization()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_viz.py", line 21, in __init__
+    self.set_style()
+  File "/home/ares/Project/Fraud Detection/Model/Fraud Detection/fraud_detection_viz.py", line 26, in set_style
+    plt.style.use('seaborn')
+  File "/home/ares/anaconda3/lib/python3.11/site-packages/matplotlib/style/core.py", line 139, in use
+    raise OSError(
+OSError: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)

@@ -1,0 +1,9 @@
+2024-11-12 22:08:34,526 - FraudDetectionPipeline - INFO - Starting fraud detection pipeline
+2024-11-12 22:08:34,526 - FraudDetectionPipeline - INFO - Initializing fraud detection system
+2024-11-12 22:08:35,988 - FraudDetectionPipeline - INFO - Processing data
+2024-11-12 22:08:45,281 - FraudDetectionPipeline - INFO - Processed data shape: (1296675, 3)
+2024-11-12 22:08:45,281 - FraudDetectionPipeline - INFO - Handling class imbalance
+2024-11-12 22:09:04,433 - FraudDetectionPipeline - INFO - Resampled data shape: (2487526, 3)
+2024-11-12 22:09:04,434 - FraudDetectionPipeline - INFO - Evaluating model
+2024-11-12 22:09:58,619 - FraudDetectionPipeline - INFO - Generating visualizations
+2024-11-12 22:10:33,143 - FraudDetectionPipeline - INFO - Pipeline completed successfully
