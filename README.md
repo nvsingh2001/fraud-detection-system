@@ -1,5 +1,3 @@
-Sure, here's the converted Markdown version of the content you provided:
-
 # Fraud Detection System
 
 This project implements a machine learning-based fraud detection system. It includes key steps for preprocessing, training, evaluation, and visualization, designed to help identify and analyze fraudulent activity in data.
